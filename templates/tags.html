@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My To Do Tags</title>
+    </head>
+    <body>
+        <h1>Your Tags</h1>
+        <ul>
+            {% for tag, count in tag_counts.items() %}
+            <li>#{{ tag }}: {{ count }} </li>
+            {% endfor %}
+        </ul>
+    </body>
+</html>
